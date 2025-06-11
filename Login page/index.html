@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gradient Login Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #191221;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      width: 400px;
+      background: linear-gradient(45deg, #111, #000000);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #fe82cb4d;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    /* .login-box::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #1d1522, #261d1e);
+      z-index: -1;
+      transform: rotate(0deg);
+      animation: rotateBorder 6s linear infinite;
+    }
+
+    @keyframes rotateBorder {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    } */
+
+    .login-box h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    .input-box {
+      margin-bottom: 20px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 15px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      font-size: 14px;
+      color: white;
+      background: linear-gradient(to right, #9400ff, #ff2d55);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .input-box input::placeholder {
+      color: #fff;
+    }
+
+    .input-box input:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 8px #ff2d55;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #9400ff, #ff2d55);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-box button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff2d55;
+    }
+
+    .forgot {
+      text-align: center;
+      color: white;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .forgot a {
+      color: #ff2d55;
+      text-decoration: none;
+    }
+
+    .social-login {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-login button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: none;
+      border: 1px solid #888;
+      color: white;
+      border-radius: 30px;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .social-login button:hover {
+      background: #222;
+      border-color: #ff2d55;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>LOGIN</h2>
+    <div class="input-box">
+      <input type="text" placeholder="Username" value="Design Delight">
+    </div>
+    <div class="input-box">
+      <input type="password" placeholder="Password" value="password">
+    </div>
+    <button>Sign In</button>
+    <p class="forgot">Forgot Password? <a href="#">Click Here</a></p>
+    <div class="social-login">
+      <button>🔵 Signin with Facebook</button>
+      <button>⚫ Signin with Twitter</button>
+    </div>
+  </div>
+
+</body>
+</html>
